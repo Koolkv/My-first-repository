@@ -115,7 +115,7 @@ html {
 
 	.menu {
 		position: absolute;
-    top: -100%;
+    		top: -100%;
 	}
 }
 
@@ -162,33 +162,56 @@ html {
           /*++++++TRENDS+++++++*/
 
 .trend {
-  width: 100vw;
-  margin: 0px auto;
+ 	 width: 100vw;
+ 	 margin: 0px auto;
+ 	 display: flex;
+ 	 flex-direction: column;
 }
 
 .trend_bar {
 	position: relative;
 	display: flex;
 	margin: auto;
-	width: 230px;
-	height: 35px;
 	justify-content: center;
-  font-family: opensans-bold, Arial, san-serif;
-  font-size: 2rem;
-  text-transform: uppercase;
+  	font-family: opensans-bold, Arial, san-serif;
+  	font-size: 2rem;
+  	text-transform: uppercase;
 }
 
 .trend_bar:after {
+	clip: rect(30px, 150px, 33px, 80px);
+	width: 230px;
+	height: 35px;
 	content: "";
   position: absolute;
-  top: 32px;
-  left: 35%;
-  right: 35%;
-  bottom: 0px;
 	background-color: #b59f5b;
 	opacity: 0.4;
 	z-index: -2;
 }
+
+/*.trend_bar {
+	position: relative;
+	display: flex;
+	margin: auto;
+	width: 230px;
+	height: 35px;
+	justify-content: center;
+  	font-family: opensans-bold, Arial, san-serif;
+  	font-size: 2rem;
+  	text-transform: uppercase;
+}
+
+.trend_bar:after {
+	content: "";
+  	position: absolute;
+  	top: 32px;
+  	left: 35%;
+  	right: 35%;
+  	bottom: 0px;
+	background-color: #b59f5b;
+	opacity: 0.4;
+	z-index: -2;
+}*/
 
 .trend_list {
 	margin-top:  25px;
@@ -202,9 +225,8 @@ html {
 	display: flex;
 	align-items: flex-end;
 	width: calc(100% / 4);
-	height: 320px;
 	background-color: black;
-	padding: 15px  20px;
+	padding: 135px  20px 15px;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -266,6 +288,8 @@ html {
           /*++++++MAIN+++++++*/
 
 .content {
+	display: flex;
+	justify-content: space-between;
 	margin: 65px auto 55px;
 	max-width: 1200px;
 	padding-left: 15px;
@@ -273,12 +297,13 @@ html {
 }
 
 .container {
+	width: calc(100% / 1170 * 775);
 	display: flex;
 	justify-content: space-between;
 }
 
 .main_content {
-	width: calc(100% / 1170 * 775);
+	/*width: calc(100% / 1170 * 775);*/
 	flex-grow: 1;
 }
 
@@ -298,8 +323,9 @@ html {
 }
 
 .post_pic {
-	width: calc(100% / 900 * 380);
-	height: 293px;
+	width: 100%;
+	max-width: 381px;
+	height: 294px;
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
@@ -403,7 +429,7 @@ html {
 
 .sect {
 
-	width: calc(100% / 775 * 320);
+	width: calc(100% / 775 * 360);
 }
 
           /*++++++SIDE BAR+++++++*/
@@ -502,8 +528,8 @@ html {
 	background-color: #f3f7f5;
 	display: inline-block;
 	vertical-align: middle;
-  font-family: opensans-regular, Arial, san-serif; 
-  font-size: 13px;
+  	font-family: opensans-regular, Arial, san-serif; 
+  	font-size: 13px;
 	padding: 20px 7px 20px 20px;
 }
 
@@ -519,7 +545,7 @@ html {
 	background-size: 40%;
 	min-width: 49px;
 	height: 50px;
-  right: 0px;
+  	right: 0px;
 }
 
 .btn_hover:hover {
@@ -675,25 +701,46 @@ html {
 	position: relative;
 	display: flex;
 	margin: auto;
-	width: 230px;
-	height: 35px;
 	justify-content: center;
-  font-family: opensans-bold, Arial, san-serif;
-  font-size: 2rem;
-  text-transform: uppercase;
+  	font-family: opensans-bold, Arial, san-serif;
+  	font-size: 2rem;
+  	text-transform: uppercase;
 }
 
 .shop_bar:after {
+	clip: rect(30px, 150px, 33px, 80px);
+	width: 230px;
+	height: 35px;
 	content: "";
-  position: absolute;
-  top: 32px;
-  left: 35%;
-  right: 35%;
-  bottom: 0px;
+  	position: absolute;
 	background-color: #b59f5b;
 	opacity: 0.4;
 	z-index: -2;
 }
+
+/*.shop_bar {
+	position: relative;
+	display: flex;
+	margin: auto;
+	width: 230px;
+	height: 35px;
+	justify-content: center;
+  	font-family: opensans-bold, Arial, san-serif;
+  	font-size: 2rem;
+  	text-transform: uppercase;
+}*/
+
+/*.shop_bar:after {
+	content: "";
+  	position: absolute;
+  	top: 32px;
+  	left: 35%;
+ 	 right: 35%;
+  	bottom: 0px;
+	background-color: #b59f5b;
+	opacity: 0.4;
+	z-index: -2;
+}*/
 
 .goods {
 	display: flex;
@@ -721,9 +768,9 @@ html {
 
 .outline {
 	display: flex;
-  flex-basis: 100%;
-  margin-top: -25px;
-  outline: 3px solid #b59f5b;
+  	flex-basis: 100%;
+	margin-top: -25px;
+  	outline: 3px solid #b59f5b;
 }
 
 .item_inf {
@@ -767,7 +814,7 @@ html {
 }
 
 .btn_buy {
-  height: 50px;
+  	height: 50px;
 	width: 45%;
   }
 
@@ -842,12 +889,12 @@ html {
 	font-size: 14px;
 }
 
-          /*+++++++ Media 360px +++++++*/
+          /*+++++++ Media 640px +++++++*/
 
-@media (max-width: 360px) {
+@media (max-width: 640px) {
 
 	html {
-		font-size: 8px;
+		/*font-size: 10px;*/
 	}
 
 	.header_back_dsn {
@@ -888,11 +935,12 @@ html {
 
 	.trend_bar {
 		font-size: 1.6rem;
-		height: 30px;
+		/*height: 30px;*/
 	}
 
 	.trend_bar:after {
-		top: 27px
+		clip: rect(24px, 145px, 27px, 85px);
+    		height: 27px;
 	}
 
 	.trend_list {
@@ -906,11 +954,13 @@ html {
 
 	.block_trend {
 		width: 100vw;
-		height: calc(100vw / 360 * 230);
+		min-height: 230px;
+		padding: 15px;
 	}
 
 	.trend_tile {
 		padding: 25px 14px;
+		width: 100%;
 	}
 
 	.trend_theme {
@@ -920,10 +970,11 @@ html {
 	.content {
 		margin-top: 0px;
 		margin-bottom: 25px;
+		flex-direction: column;
 	}
 
 	.container {
-		flex-direction: column;
+		width: 100%;
 	}
 
 	.main_content {
@@ -938,14 +989,14 @@ html {
 
 	.news:after {
 		content: "";
-    position: absolute;
-    top: 102.9%;
-    left: 0%;
-    right: 0%;
-    bottom: -3.9%;
-    background-color: #eeeeee;
-    opacity: 1;
-    z-index: -2;
+    		position: absolute;
+    		top: 102.9%;
+    		left: 0%;
+    		right: 0%;
+   		 bottom: -3.9%;
+   		 background-color: #eeeeee;
+   		 opacity: 1;
+   		 z-index: -2;
 	}
 
 	.news:nth-child(n+2) {
@@ -980,7 +1031,8 @@ html {
 	}
 
 	.text {
-		line-height: 1.4;
+		font-size: 1.4rem;
+		line-height: 2rem;
 	}
 
 	.side_bar {
@@ -1009,7 +1061,7 @@ html {
 	}
 
 	.shop_bar {
-	 font-size: 16px;
+	 	font-size: 16px;
 	}
 
 	.goods {
@@ -1030,9 +1082,9 @@ html {
 
 }
 
-          /*+++++++ Media 361-768px +++++++*/
+          /*+++++++ Media 641-1200px +++++++*/
 
-@media (min-width: 361px) and (max-width: 768px)  {
+@media (min-width: 641px) and (max-width: 1200px)  {
 
 
 	html {
@@ -1045,10 +1097,11 @@ html {
 	}
 
 	.title {
-		width: 87.3855%;
+		width: calc(100% / 698 * 610);
+		/*width: 87.3855%;*/
 		padding-top: 90px;
-  	padding-bottom: 115px;
-  	line-height: 1.3;
+  		padding-bottom: 115px;
+  		line-height: 1.3;
 	}
 	
 	.block_trend {
@@ -1066,8 +1119,8 @@ html {
 
 	.trend_theme {
 		font-size: 1.9rem;
-    line-height: 1.3;
-    margin-top: 8px;
+    		line-height: 1.3;
+    		margin-top: 8px;
 	}
 
 	.content {
@@ -1075,7 +1128,8 @@ html {
 	}
 
 	.container {
-		gap: 35px;
+		/*gap: 35px;*/
+		width: calc(100% / 698 * 380);
 	}
 
 	.main_content {
@@ -1093,8 +1147,8 @@ html {
 	}
 
 	.post_pic {
-		width: 100%;
-		height: 300px;
+		max-width: 393px;
+		height: 304px;
 	}
 
 	.course__preview {
@@ -1107,14 +1161,14 @@ html {
 
 	.news:after {
 		content: "";
-    position: absolute;
-    top: 102.9%;
-    left: 0%;
-    right: 0%;
-    bottom: -3.9%;
-    background-color: #eeeeee;
-    opacity: 1;
-    z-index: -2;
+    		position: absolute;
+    		top: 102.9%;
+    		left: 0%;
+    		right: 0%;
+    		bottom: -3.9%;
+    		background-color: #eeeeee;
+   		 opacity: 1;
+   		 z-index: -2;
 	}
 
 	.news:nth-child(n+2) {
@@ -1194,7 +1248,7 @@ html {
 
           /*+++++++ Media 769-1024px +++++++*/
 
-@media (min-width: 769px) and (max-width: 1024px) {
+/*@media (min-width: 769px) and (max-width: 1024px) {
 
 	.goods {
 		flex-wrap: wrap;
@@ -1213,11 +1267,8 @@ html {
 	}
 
 	.trend_list {
-	flex-wrap: wrap;
-	gap: unset;
+		flex-wrap: wrap;
+		gap: unset;
 	}
 
-/*	.footer {
-		margin: 20px auto auto;
-	}*/
 }
