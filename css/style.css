@@ -265,6 +265,7 @@ html {
 .trend_tile {
 	border: 3px solid #b59f5b;
 	padding: 38px 32px;
+	width: 100%;
 }
 
 .trend_theme {
@@ -960,7 +961,6 @@ html {
 
 	.trend_tile {
 		padding: 25px 14px;
-		width: 100%;
 	}
 
 	.trend_theme {
