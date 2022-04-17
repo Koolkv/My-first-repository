@@ -17,6 +17,7 @@
   position: fixed;  
   display: flex;
   z-index: 100;
+  display: none;
    /*Включает модальное окно*/
 }
 
